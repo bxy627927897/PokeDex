@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/backgroundpika"
+        android:scaleType = "centerCrop"/>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+            <ImageView
+                android:layout_marginLeft="60dp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/log1"
+                android:scaleType="centerCrop"
+                android:id="@+id/logo1"
+                android:adjustViewBounds="true" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/logo1"
+                android:layout_marginLeft="20dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:id="@+id/title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#1E90FF"
+                android:text="精灵宝可梦资料库"/>
+            <TextView
+                android:layout_below="@+id/title1"
+                android:layout_alignLeft="@+id/title1"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#191970"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="PokeDex"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/buttonlay3">
+            <Button
+                android:background="@drawable/button1"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:id="@+id/button3"
+                android:text="道具图鉴"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/buttonlay2"
+            android:layout_above="@+id/buttonlay3">
+            <Button
+                android:background="@drawable/button1"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:id="@+id/button2"
+                android:text="技能图鉴" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/buttonlay1"
+            android:layout_above="@+id/buttonlay2">
+            <Button
+                android:background="@drawable/button1"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:id="@+id/button1"
+                android:text="宝可梦图鉴" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/buttonlay4"
+            android:layout_above="@+id/buttonlay1">
+            <Button
+                android:background="@drawable/button1"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:id="@+id/buttonDB"
+                android:hint="更新数据" />
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+</FrameLayout>
+
